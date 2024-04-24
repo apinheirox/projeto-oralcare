@@ -3,6 +3,7 @@
     --Background1: #FFFFFF;
     --FontPrincipal: #1C2A5F;
     --FontSecundaria: #7A7AA5;
+    --FontReforco: #7A7A7A;
     --ButtonIcon: #2E4BB9;
     --FontFamily-1:"Big Shoulders Display", sans-serif;
     --FontFamily-2: "Sora", sans-serif;
@@ -12,6 +13,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+body{
+    background-color: white;
+    overflow-x: hidden;
 }
 header{
     margin: 0 auto;
@@ -73,27 +78,112 @@ nav a{
     padding: 0 20px; 
 }
 
-.container-esq {
+#home .container-esq {
     max-width: 400px; /* Define a largura máxima do container-esq */
     margin-right: auto; /* Move o container para o lado esquerdo da tela */
     margin-left: 0; /* Remove a margem à esquerda para evitar um espaço extra */
 }
 
-.container-esq h1 {
+#home .container-esq h1 {
     font-family: var(--FontFamily-1);
     color: white;
     font-size: 50px;
     margin-bottom: 10px;
 }
 
-.container-esq p {
+#home .container-esq p {
     font-family: var(--FontFamily-2);
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
 }
-.container-esq button{
+#home .container-esq button{
     background-color: var(--ButtonIcon);
     height: 40px;
     width: 150px;
+}
+
+#sobre .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Distribui os filhos à esquerda e à direita */
+    align-items: center; /* Centraliza verticalmente os filhos */
+    flex-wrap: wrap; /* Para que os filhos possam se ajustar em telas menores */
+}
+
+#sobre .container-esq {
+    flex-basis: calc(50% - 10px); /* 50% menos a margem horizontal */
+    padding-right: 10px; /* Espaçamento entre os containers */
+    box-sizing: border-box; /* Inclui o padding na largura */
+}
+
+#sobre .container-dir {
+    flex-basis: calc(50% - 10px); /* 50% menos a margem horizontal */
+    padding-left: 10px; /* Espaçamento entre os containers */
+    box-sizing: border-box; /* Inclui o padding na largura */
+}
+
+#sobre .container-esq h2 {
+    font-size: 18px;
+    font-family: var(--FontFamily-2);
+    color: var(--FontSecundaria);
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#sobre .container-esq h1 {
+    font-size: 50px;
+    font-family: var(--FontFamily-1);
+    color: var(--FontPrincipal);
+    margin-bottom: 20px;
+}
+
+#sobre .container-esq p {
+    font-size: 16px;
+    font-family: var(--FontFamily-2);
+    color: var(--FontReforco);
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+#sobre .container-dir img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 700px){
+    #home{
+        background-image: url(../../images/Background-Cel-1.png);
+        background-size: cover;
+    }
+    #home .container, #sobre .container{
+        max-width: 375px;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    #sobre{
+        margin: 50px auto;
+    }
+    #sobre .container{
+        margin: 0 auto;
+        display: grid;
+        flex-direction: column;
+    }
+    #home .container-esq{
+        text-align: center;
+    }
+    #home .container-esq h1, 
+    #sobre .container-esq h1{
+        font-size: 32px;
+    }
+    #home .container-esq p, 
+    #sobre .container-esq p{
+        font-size: 15px;
+    }
+    #sobre .container-esq{
+        margin: 0 auto;
+        display: grid;
+        justify-content: center;
+    }
 }
