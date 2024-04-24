@@ -343,15 +343,16 @@ ion-icon {
     font-family: var(--FontFamily-1);
 }
 #servicos .container button{
-    margin-top: 20px;
+    margin-top: 40px;
     transition: all 0.7s ease;
 }
 #servicos .container button:hover{
     transition: all 0.7s ease;
     background-color: var(--FontPrincipal);
 }
+/* Estilos para a seção Depoimentos */
 #depoimentos{
-    display: block;
+    display: flex;
     text-align: center;
     align-items: center;
     justify-content: center;
