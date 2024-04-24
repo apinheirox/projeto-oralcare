@@ -1,38 +1,45 @@
+/* Importar fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Sora:wght@100..800&display=swap');
-:root{
+
+:root {
     --Background1: #FFFFFF;
     --FontPrincipal: #1C2A5F;
     --FontSecundaria: #7A7AA5;
     --FontReforco: #7A7A7A;
     --ButtonIcon: #2E4BB9;
-    --FontFamily-1:"Big Shoulders Display", sans-serif;
+    --FontFamily-1: "Big Shoulders Display", sans-serif;
     --FontFamily-2: "Sora", sans-serif;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background-color: white;
+
+body {
+    background-color: var(--Background1);
     overflow-x: hidden;
 }
-header{
+
+header {
     margin: 0 auto;
     align-items: center;
-    font-family: var(--FontFamily-2) ;
+    font-family: var(--FontFamily-2);
     padding: 10px;
     height: 90px;
 }
-.logo{
+
+.logo {
     max-height: 90px;
     align-items: center;
 }
-.logo img{
+
+.logo img {
     height: 130px;
 }
-.container{
+
+.container {
     max-width: 1200px;
     height: 70px;
     display: flex;
@@ -40,18 +47,20 @@ header{
     justify-content: space-around;
     margin: 0 auto;
 }
-nav ul{
+
+nav ul {
     display: flex;
     align-items: center;
     gap: 20px;
     list-style: none;
 }
-nav a{
+
+nav a {
     text-decoration: none;
     color: var(--FontSecundaria);
 }
 
-.container button{
+.container button {
     background-color: var(--ButtonIcon);
     width: 150px;
     height: 45px;
@@ -61,6 +70,8 @@ nav a{
     border-radius: 10px;
     cursor: pointer;
 }
+
+/* Estilos para a seção Home */
 #home {
     background-image: url(.././../images/Background-1.png);
     background-repeat: no-repeat;
@@ -68,20 +79,20 @@ nav a{
     width: 100%;
     height: 563px;
     display: flex;
-    justify-content: center; /* Centraliza todo o conteúdo horizontalmente */
-    align-items: center; /* Centraliza todo o conteúdo verticalmente */
+    justify-content: center;
+    align-items: center;
 }
 
 #home .container {
     max-width: 1000px;
     width: 100%;
-    padding: 0 20px; 
+    padding: 0 20px;
 }
 
 #home .container-esq {
-    max-width: 400px; /* Define a largura máxima do container-esq */
-    margin-right: auto; /* Move o container para o lado esquerdo da tela */
-    margin-left: 0; /* Remove a margem à esquerda para evitar um espaço extra */
+    max-width: 400px;
+    margin-right: auto;
+    margin-left: 0;
 }
 
 #home .container-esq h1 {
@@ -92,57 +103,65 @@ nav a{
 }
 
 #home .container-esq p {
-    font-family: var(--FontFamily-2);
     color: white;
+    font-family: var(--FontFamily-2);
     font-size: 18px;
     margin-bottom: 10px;
 }
-#home .container-esq button{
+
+#home .container-esq button {
     background-color: var(--ButtonIcon);
+    font-family: var(--FontFamily-2);
     height: 40px;
     width: 150px;
+}
+
+/* Estilos para a seção Sobre */
+#sobre {
+    padding: 50px 0 100px;
+    background-color: var(--Background1);
 }
 
 #sobre .container {
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Distribui os filhos à esquerda e à direita */
-    align-items: center; /* Centraliza verticalmente os filhos */
-    flex-wrap: wrap; /* Para que os filhos possam se ajustar em telas menores */
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 #sobre .container-esq {
-    flex-basis: calc(50% - 10px); /* 50% menos a margem horizontal */
-    padding-right: 10px; /* Espaçamento entre os containers */
-    box-sizing: border-box; /* Inclui o padding na largura */
+    flex-basis: calc(50% - 10px);
+    padding-right: 10px;
+    box-sizing: border-box;
 }
 
 #sobre .container-dir {
-    flex-basis: calc(50% - 10px); /* 50% menos a margem horizontal */
-    padding-left: 10px; /* Espaçamento entre os containers */
-    box-sizing: border-box; /* Inclui o padding na largura */
+    flex-basis: calc(50% - 10px);
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
 #sobre .container-esq h2 {
     font-size: 18px;
-    font-family: var(--FontFamily-2);
     color: var(--FontSecundaria);
+    font-family: var(--FontFamily-2);
     font-weight: bold;
     margin-bottom: 10px;
 }
 
 #sobre .container-esq h1 {
     font-size: 50px;
-    font-family: var(--FontFamily-1);
     color: var(--FontPrincipal);
+    font-family: var(--FontFamily-1);
     margin-bottom: 20px;
 }
 
 #sobre .container-esq p {
     font-size: 16px;
-    font-family: var(--FontFamily-2);
     color: var(--FontReforco);
+    font-family: var(--FontFamily-2);
     margin-bottom: 5px;
     line-height: 1.5;
 }
@@ -152,10 +171,78 @@ nav a{
     height: auto;
 }
 
+/* Estilos para a seção Equipe */
+#equipe {
+    padding: 400px 0;
+    background-color: var(--Background1);
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+#equipe .container{
+    display: block;
+    max-width: 1000px;
+}
+#equipe h1 {
+    font-size: 50px;
+    color: var(--FontPrincipal);
+    margin-bottom: 10px;
+    font-family: var(--FontFamily-1);
+}
+
+.subtitulo {
+    font-size: 18px;
+    color: var(--FontReforco);
+    margin-bottom: 40px;
+    font-family: var(--FontFamily-2);
+}
+
+.cards-equipe {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    max-width: 300px;
+    max-height: 290px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.055);
+    padding: 20px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.card img {
+    max-width: 100%;
+    margin-top: -45px;
+}
+
+.card h3 {
+    font-size: 24px;
+    color: var(--FontPrincipal);
+    font-family: var(--FontFamily-2);
+    margin-top: -30px;
+}
+
+.card p {
+    font-size: 15px;
+    color: var(--FontReforco);
+    font-family: var(--FontFamily-2);
+    line-height: 1.6;
+}
+
+
 @media (max-width: 700px){
     #home{
         background-image: url(../../images/Background-Cel-1.png);
         background-size: cover;
+    }
+    #equipe{
+        margin-top: 100px;
     }
     #home .container, #sobre .container{
         max-width: 375px;
@@ -172,18 +259,31 @@ nav a{
     }
     #home .container-esq{
         text-align: center;
+        margin: -50px auto;
     }
-    #home .container-esq h1, 
-    #sobre .container-esq h1{
-        font-size: 32px;
+    #home .container-esq h1,
+    #sobre .container-esq h1,
+    #equipe .container h1{
+        font-size: 35px;
     }
-    #home .container-esq p, 
-    #sobre .container-esq p{
+    #home .container-esq p,
+    #sobre .container-esq p,
+    #equipe .container p,
+    #equipe .cards-equipe p{
         font-size: 15px;
+    }
+    #equipe .container h3{
+        font-size: 20px;
+    }
+    #sobre .container-esq h2{
+        font-size: 16px;
     }
     #sobre .container-esq{
         margin: 0 auto;
         display: grid;
         justify-content: center;
+    }
+    .cards-equipe{
+        grid-template-columns: 1fr;
     }
 }
