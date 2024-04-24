@@ -103,33 +103,9 @@ nav a {
     border: none;
 }
 /* Estilos do ícone do menu */
-.menu-icon {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background: var(--FontSecundaria);
-    position: relative;
-    transition: background 0.2s ease;
-    border: none;
-}
-
-.menu-icon::before,
-.menu-icon::after {
-    content: '';
-    position: absolute;
-    width: 25px;
-    height: 3px;
-    left: 6px;
-    background: var(--FontSecundaria);
-    transition: transform 0.2s ease;
-}
-
-.menu-icon::before {
-    top: -8px;
-}
-
-.menu-icon::after {
-    top: 8px;
+ion-icon {
+    font-size: 40px;
+    cursor: pointer;
 }
 
 
@@ -352,6 +328,11 @@ nav a {
         background-image: url(../../images/Background-Cel-1.png);
         background-size: cover;
     }
+    .logo img{
+        width: 130px;
+        height: 100px;
+        margin: 10px auto;
+    }
     #equipe{
         margin-top: 100px;
         background-image: url(../../images/Background-Cel-2.png);
@@ -444,5 +425,8 @@ nav a {
 
     .menu-btn.active .menu-icon::after {
         transform: translateY(-8px) rotate(-45deg);
+    }
+    .btn{
+        display: none;
     }
 }
