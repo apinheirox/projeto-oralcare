@@ -58,9 +58,14 @@ nav ul {
 nav a {
     text-decoration: none;
     color: var(--FontSecundaria);
+    transition: all 0.9s ease;
 }
-
-.btn {
+nav a:hover{
+    color: var(--FontPrincipal);
+    text-decoration: underline;
+    transition: all 0.9s ease
+}
+.btn, .btn2 {
     background-color: var(--ButtonIcon);
     width: 150px;
     height: 45px;
@@ -69,6 +74,11 @@ nav a {
     border: none;
     border-radius: 10px;
     cursor: pointer;
+    transition: all 0.7s ease;
+}
+.btn:hover{
+    background-color: var(--FontPrincipal);
+    transition: all 0.7s ease;
 }
 .sidebar {
     position: fixed;
@@ -152,6 +162,11 @@ ion-icon {
     font-family: var(--FontFamily-2);
     height: 40px;
     width: 150px;
+    transition: all 0.7s ease;
+}
+#home .container-esq button:hover{
+    background-color: var(--FontPrincipal);
+    transition: all 0.7s ease;
 }
 
 /* Estilos para a seção Sobre */
@@ -294,14 +309,18 @@ ion-icon {
 }
 
 #servicos .card {
-    max-width: 300px;
-    max-height: 290px;
+    max-width: 270px;
+    max-height: 300px;
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.055);
     padding: 20px;
     text-align: center;
     margin: 0 auto;
+}
+#servicos .card h3{
+    font-family: var(--FontFamily-1);
+    font-size: 27px;
 }
 #servicos .container{
     display: block;
@@ -322,6 +341,14 @@ ion-icon {
     color: var(--FontPrincipal);
     margin-bottom: 10px;
     font-family: var(--FontFamily-1);
+}
+#servicos .container button{
+    margin-top: 20px;
+    transition: all 0.7s ease;
+}
+#servicos .container button:hover{
+    transition: all 0.7s ease;
+    background-color: var(--FontPrincipal);
 }
 @media (max-width: 768px){
     #home{
