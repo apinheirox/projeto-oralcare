@@ -12,16 +12,27 @@
 <body>
     <header>
         <div class="container">
-        <div class="logo"><img src="./images/Logotipo.png" alt=""></div>
-        <nav>
-            <ul>
+            <div class="logo"><img src="./images/Logotipo.png" alt=""></div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#">A Clínica</a></li>
+                    <li><a href="#">Equipe</a></li>
+                    <li><a href="#">Especialidades</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+            <button class="btn">Agendar Consulta</button>
+            <button class="menu-btn">
+                <span class="menu-icon"></span>
+            </button>
+        </div>
+        <div class="sidebar">
+            <ul class="sidebar-nav">
                 <li><a href="#">A Clínica</a></li>
                 <li><a href="#">Equipe</a></li>
                 <li><a href="#">Especialidades</a></li>
                 <li><a href="#">Contato</a></li>
             </ul>
-        </nav>
-        <button>Agendar Consulta</button>
         </div>
     </header>
     <section id="home">
@@ -29,7 +40,7 @@
             <div class="container-esq">
             <h1>Transforme seu sorriso em sua maior conquista!</h1>
             <p>Oferecemos tratamentos odontológicos de qualidade para cuidar de você e da sua família.</p>
-            <button>Agendar Consulta</button>
+            <button class="btn">Agendar Consulta</button>
             </div>
         </div>
     </section>
@@ -74,6 +85,53 @@
             </div>
         </div>
     </section>
-    
+    <section id="servicos">
+        <div class="container">
+            <h1>Nossas Especialidades</h1>
+            <p class="subtitulo">Confira abaixo nossas especialidades</p>
+            <div class="cards-servicos">
+                <!-- Card 1 -->
+                <div class="card">
+                    <img src="./images/Serviços odonto/serviços1.png" alt="">
+                    <h3>Isabela Tereza</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="card">
+                    <img src="./images/Serviços odonto/serviços2.png" alt="">
+                    <h3>Fernando</h3>
+                    <p>Phasellus fringilla faucibus dolor, vel tristique metus sagittis nec. Nam suscipit quam et turpis facilisis posuere.</p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="card">
+                    <img src="./images/Serviços odonto/serviços3.png" alt="">
+                    <h3>Carlos Junior</h3>
+                    <p>Integer condimentum, elit nec blandit sodales, lacus libero accumsan eros, eget varius justo erat eget nisl.</p>
+                </div>
+                <div class="card">
+                    <img src="./images/Serviços odonto/serviços4.png" alt="">
+                    <h3>Isabela Tereza</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                </div>
+                
+                <!-- Card 5 -->
+                <div class="card">
+                    <img src="./images/Serviços odonto/serviços5.png" alt="">
+                    <h3>Fernando</h3>
+                    <p>Phasellus fringilla faucibus dolor, vel tristique metus sagittis nec. Nam suscipit quam et turpis facilisis posuere.</p>
+                </div>
+                
+                <!-- Card 6 -->
+                <div class="card">
+                    <img src="./images/Serviços odonto/serviços6.png" alt="">
+                    <h3>Carlos Junior</h3>
+                    <p>Integer condimentum, elit nec blandit sodales, lacus libero accumsan eros, eget varius justo erat eget nisl.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./main.js"></script>
 </body>
 </html>
