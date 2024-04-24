@@ -350,6 +350,39 @@ ion-icon {
     transition: all 0.7s ease;
     background-color: var(--FontPrincipal);
 }
+#depoimentos{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 350px;
+}
+#depoimentos h1{
+    font-size: 50px;
+    color: var(--FontPrincipal);
+    margin-bottom: 10px;
+    font-family: var(--FontFamily-1);
+}
+#depoimentos p{
+    color: var(--FontSecundaria);
+}
+#depoimentos .cards-equipe img{
+    margin-top: 10px;
+}
+#depoimentos h3{
+    margin-top: 10px;
+}
+.card ion-icon{
+    font-size: 26px;
+    color: rgb(182, 182, 0);
+}
+#depoimentos .container{
+    display: block;
+    max-width: 1000px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width: 768px){
     #home{
         background-image: url(../../images/Background-Cel-1.png);
@@ -365,6 +398,12 @@ ion-icon {
         background-image: url(../../images/Background-Cel-2.png);
         height: 1100px;
         margin-top: 500px;
+    }
+    #servicos{
+        padding: 0px 0px 500px;
+    }
+    #depoimentos{
+        margin-top: 550px;
     }
     #equipe .container{
         height: 1000px;
@@ -455,5 +494,21 @@ ion-icon {
     }
     .btn{
         display: none;
+    }
+    .card ion-icon{
+        font-size: 22px;
+        color: rgb(182, 182, 0);
+    }
+    #depoimentos h1{
+        font-size: 35px;
+    }
+    #depoimentos p{
+        font-size: 15px;
+    }
+    #depoimentos .cards-equipe img{
+        width: 80px;
+    }
+    #depoimentos h3{
+        font-size: 20px;
     }
 }
