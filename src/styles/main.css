@@ -121,7 +121,7 @@ ion-icon {
 
 /* Estilos para a seção Home */
 #home {
-    background-image: url(.././../images/background1.jpg);
+    background-image: url(.././../images/Background-1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -226,7 +226,7 @@ ion-icon {
 
 /* Estilos para a seção Equipe */
 #equipe {
-    background-image: url(../../images/background2.jpg);
+    background-image: url(../../images/Backgroun-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
@@ -358,27 +358,46 @@ ion-icon {
     justify-content: center;
     margin-top: 350px;
 }
+#depoimentos .container-esq{
+    margin: 0 30px;
+}
 #depoimentos h1{
     font-size: 50px;
     color: var(--FontPrincipal);
     margin-bottom: 10px;
     font-family: var(--FontFamily-1);
+    text-align: left;
 }
 #depoimentos p{
     color: var(--FontSecundaria);
+    font-size: 12px;
+    text-align: left;
+    max-width: 250px;
 }
 #depoimentos .cards-equipe img{
     margin-top: 10px;
+    width: 50px;
 }
 #depoimentos h3{
     margin-top: 10px;
+    font-size: 15px;
+}
+#depoimentos .card {
+    max-width: 200px;
+    max-height: 250px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 4px rgba(0, 0, 0, 0.055);
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
 }
 .card ion-icon{
-    font-size: 26px;
+    font-size: 17px;
     color: rgb(182, 182, 0);
 }
 #depoimentos .container{
-    display: block;
+    display: flex;
     max-width: 1000px;
     height: 400px;
     justify-content: center;
@@ -386,8 +405,9 @@ ion-icon {
 }
 @media (max-width: 768px){
     #home{
-        background-image: url(../../images/Background-Cel-1.png);
+        background-image: url(../../images/Background-Cel-1.jpg);
         background-size: cover;
+        height: 550x;
     }
     .logo img{
         width: 130px;
@@ -396,15 +416,25 @@ ion-icon {
     }
     #equipe{
         margin-top: 100px;
-        background-image: url(../../images/Background-Cel-2.png);
+        background-image: url(../../images/Background-Cel-2.jpg);
         height: 1100px;
         margin-top: 500px;
     }
     #servicos{
         padding: 0px 0px 500px;
     }
+    #depoimentos h1,
+    #depoimentos p{
+        text-align: center;
+    }
     #depoimentos{
-        margin-top: 550px;
+        margin-top: 580px;
+        text-align: center;
+    }
+    #depoimentos .container{
+        display: block;
+        justify-content: center;
+        align-items: center;
     }
     #equipe .container{
         height: 1000px;
@@ -418,7 +448,7 @@ ion-icon {
         flex-direction: column;
     }
     #sobre{
-        margin: 50px auto;
+        margin: 0px 50px;
     }
     #sobre .container{
         margin: 0 auto;
@@ -506,10 +536,16 @@ ion-icon {
     #depoimentos p{
         font-size: 15px;
     }
+    .card ion-icon{
+        font-size: 17px;
+    }
+    #depoimentos .card p{
+        font-size: 10px;
+    }
     #depoimentos .cards-equipe img{
         width: 80px;
     }
     #depoimentos h3{
-        font-size: 20px;
+        font-size: 18px;
     }
 }
