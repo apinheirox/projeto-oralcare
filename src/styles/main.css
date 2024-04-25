@@ -326,6 +326,7 @@ ion-icon {
 #servicos .card h3{
     font-family: var(--FontFamily-1);
     font-size: 27px;
+    margin-top: -5px;
 }
 #servicos .container{
     display: block;
@@ -336,7 +337,8 @@ ion-icon {
     margin-top: 60px;
 }
 #servicos .card img{
-    width: 135px;
+    width: 70px;
+    margin-top: -15px;
 }
 #servicos p{
     color: var(--FontSecundaria);
