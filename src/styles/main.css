@@ -116,14 +116,13 @@ nav a:hover{
     background-color: none;
     border: none;
 }
-/* Estilos do ícone do menu */
+
 ion-icon {
     font-size: 40px;
     cursor: pointer;
 }
 
 
-/* Estilos para a seção Home */
 #home {
     background-image: url(.././../images/Background-1.jpg);
     background-repeat: no-repeat;
@@ -175,7 +174,7 @@ ion-icon {
     transition: all 0.7s ease;
 }
 
-/* Estilos para a seção Sobre */
+
 #sobre {
     padding: 50px 0 120px;
     background-color: var(--Background1);
@@ -230,7 +229,7 @@ ion-icon {
     height: auto;
 }
 
-/* Estilos para a seção Equipe */
+
 #equipe {
     background-image: url(../../images/Backgroun-2.jpg);
     background-size: cover;
@@ -300,7 +299,7 @@ ion-icon {
     line-height: 1.6;
 }
 
-/* Estilos para a seção Serviços */
+
 #servicos{
     display: block;
     text-align: center;
@@ -358,7 +357,7 @@ ion-icon {
     transition: all 0.7s ease;
     background-color: var(--FontPrincipal);
 }
-/* Estilos para a seção Depoimentos */
+
 #depoimentos{
     display: flex;
     text-align: center;
@@ -411,7 +410,7 @@ ion-icon {
     justify-content: center;
     align-items: center;
 }
-/* Estilos para a seção Contato */
+
 
 #contato{
     display: flex;
@@ -480,6 +479,7 @@ select{
     margin-bottom: 10px;
     text-align: left;
     max-width: 450px;
+    font-family: var(--FontFamily-2);
 }
 .contato-icon{
     display: flex;
@@ -618,12 +618,13 @@ footer {
     }
     #home .container-esq{
         text-align: center;
-        margin: -50px auto;
+        margin: -20px auto;
     }
     #home .container-esq h1,
     #sobre .container-esq h1,
     #equipe .container h1,
-    #servicos .container h1{
+    #servicos .container h1,
+    #contato h1{
         font-size: 35px;
     }
     #home .container-esq p,
@@ -631,7 +632,8 @@ footer {
     #equipe .container p,
     #equipe .cards-equipe p,
     #servicos .container p,
-    #servicos .cards-servicos p{
+    #servicos .cards-servicos p,
+    #contato p{
         font-size: 15px;
     }
     #equipe .container h3,
@@ -667,12 +669,12 @@ footer {
         padding-top: 90px;
     }
 
-    /* Exibir o sidebar quando o menu é clicado */
+    
     .sidebar.active {
         left: 0;
     }
 
-    /* Animação do ícone do menu ao abrir a sidebar */
+    
     .menu-btn.active .menu-icon {
         background: transparent;
     }
@@ -723,7 +725,7 @@ footer {
     }
     #contato form{
         margin: 0 auto;
-        width: 370px;
+        width: 330px;
         justify-content: center;
     }
     .footer-content{
