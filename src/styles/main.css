@@ -410,6 +410,82 @@ ion-icon {
     justify-content: center;
     align-items: center;
 }
+/* Estilos para a seção Contato */
+
+#contato{
+    display: flex;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+}
+#contato .container-esq{
+    margin: 0 50px;
+}
+#contato form{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    width: 500px;
+    margin-top: 100px;
+}
+#contato form input, 
+select{
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: var(--FontFamily-2);
+    color: var(--FontSecundaria);
+}
+#contato form textarea{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: var(--FontFamily-2);
+    color: var(--FontSecundaria);
+}
+#contato form button{
+    background-color: var(--ButtonIcon);
+    color: var(--Background1);
+    height: 50px;
+    border: 1px solid;
+    border-radius: 10px;
+    font-family: var(--FontFamily-2);
+    cursor: pointer;
+}
+#contato .container{
+    display: flex;
+    max-width: 1000px;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+#contato h1{
+    font-size: 50px;
+    color: var(--FontPrincipal);
+    margin-bottom: 10px;
+    font-family: var(--FontFamily-1);
+    text-align: left;
+}
+#contato p{
+    color: var(--FontSecundaria);
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: left;
+    max-width: 450px;
+}
+.contato-icon{
+    display: flex;
+    flex-direction: row;
+}
+.contato-icon p{
+    margin: 7px 10px;
+}
+.contato-icon ion-icon{
+    font-size: 35px;
+    color: var(--ButtonIcon);
+}
 @media (max-width: 768px){
     #home{
         background-image: url(../../images/Background-Cel-1.jpg);
@@ -554,5 +630,21 @@ ion-icon {
     }
     #depoimentos h3{
         font-size: 18px;
+    }
+    #contato{
+        margin-top: 900px;
+    }
+    #contato .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contato .container-dir{
+        margin: 40px auto;
+    }
+    #contato form{
+        margin: 0 auto;
+        width: 300px;
+        justify-content: center;
     }
 }
