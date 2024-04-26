@@ -454,6 +454,11 @@ select{
     border-radius: 10px;
     font-family: var(--FontFamily-2);
     cursor: pointer;
+    transition: all 0.7s ease;
+}
+#contato form button:hover{
+    background-color: var(--FontPrincipal);
+    transition: all 0.7s ease;
 }
 #contato .container{
     display: flex;
@@ -541,7 +546,7 @@ footer {
 
 .footer-section.contact-form ion-icon {
     font-size: 30px;
-    padding: 5px;
+    padding: 9px;
     color: var(--ButtonIcon);
 }
 
@@ -558,6 +563,7 @@ footer {
     font-size: 15px;
     margin-top: 20px;
 }
+
 @media (max-width: 768px){
     #home{
         background-image: url(../../images/Background-Cel-1.jpg);
