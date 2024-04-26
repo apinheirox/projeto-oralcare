@@ -377,7 +377,7 @@ ion-icon {
 }
 #depoimentos p{
     color: var(--FontSecundaria);
-    font-size: 12px;
+    font-size: 18px;
     text-align: left;
     max-width: 250px;
 }
@@ -410,7 +410,9 @@ ion-icon {
     justify-content: center;
     align-items: center;
 }
-
+#depoimentos .card p{
+    font-size: 12px;
+}
 
 #contato{
     display: flex;
